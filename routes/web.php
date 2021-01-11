@@ -21,10 +21,15 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
+Route::middleware('auth')
+    ->group(function(){
+        Route::get('sell', 'SellController@showSellForm')->name('sell')
+    });
+
 Route::prefix('mypage')
-->namespace('MyPage')
-->middleware('auth')
-->group(function () {
+    ->namespace('MyPage')
+    ->middleware('auth')
+    ->group(function () {
     Route::get('edit-profile', 'ProfileController@showProfileEditForm')->name('mypage.edit-profile');
     Route::post('edit-profile', 'ProfileController@editProfile')->name('mypage.edit-profile');
 });
