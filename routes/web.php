@@ -20,6 +20,7 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('items/{item}', function(){return "商品詳細";})->name('item');
 
 Route::middleware('auth')
     ->group(function(){
