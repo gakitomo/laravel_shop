@@ -24,7 +24,7 @@ class EditRequest extends FormRequest
     public function rules()
     {
         return [
-            'name' => ['requested', 'string', 'max255'],
+            'name' => ['required', 'string', 'max:255'],
         ];
     }
 }
