@@ -18,7 +18,7 @@ Route::get('', 'ItemsController@showItems')->name('top');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-Route::get('items/{item}', function(){return "商品詳細";})->name('item');
+Route::get('items/{item}', 'ItemsController@showItemDetail')->name('item');
 
 Route::middleware('auth')
     ->group(function(){
