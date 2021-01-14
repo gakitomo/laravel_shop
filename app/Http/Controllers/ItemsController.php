@@ -49,8 +49,18 @@ class ItemsController extends Controller
     }
 
     public function showItemDetail(Item $item)
-     {
-         return view('items.item_detail')
-             ->with('item', $item);
-     }
+    {
+        return view('items.item_detail')
+            ->with('item', $item);
+    }
+
+    public function showBuyItemForm(Item $item)
+    {
+        if (!$item->isStateSelling) {
+            abort(404);
+        }
+
+        return view('items.item_buy_form')
+            ->with('item', $item);
+    }
 }
