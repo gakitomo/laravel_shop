@@ -113,7 +113,7 @@ class ItemsController extends Controller
             $seller->sales += $item->price;
             $seller->save();
 
-            $charge->Charge::create([
+            $charge = Charge::create([
                 'card' => $token,
                 'amount' => $item->price,
                 'currency' => 'jpy'
