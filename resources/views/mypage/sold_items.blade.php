@@ -22,7 +22,7 @@
                                 @if ($item->isStateSelling)
                                     <span class="badge badge-success px-2 py-2">出品中</span>
                                 @else
-                                    <span class="badge badge-dark px-2 py-2">売却済</span>
+                                    <span class="badge badge-danger px-2 py-2">売却済</span>
                                 @endif
                                 <span>{{$item->secondaryCategory->primaryCategory->name}} / {{$item->secondaryCategory->name}}</span>
                             </div>

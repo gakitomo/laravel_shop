@@ -19,7 +19,7 @@
                         </div>
                         <div class="flex-fill p-3">
                             <div>
-                                <span class="badge badge-dark px-2 py-2">購入済</span>
+                                <span class="badge badge-danger px-2 py-2">購入済</span>
                                 <span>{{$item->secondaryCategory->primaryCategory->name}} / {{$item->secondaryCategory->name}}</span>
                             </div>
                             <div class="card-title mt-2 font-weight-bold" style="font-size: 20px">{{$item->name}}</div>
