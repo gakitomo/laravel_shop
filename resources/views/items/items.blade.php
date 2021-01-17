@@ -23,7 +23,7 @@
                         @endif
                     </div>
                     <div class="card-body">
-                        <small class="text-muted">{{$item->secondaryCategory->primaryCategory->name}} / {{$item->secondaryCategory->name}}</small>
+                        <small class="text-muted">{{$item->secondaryCategory->primaryCategory->name}} - {{$item->secondaryCategory->name}}</small>
                         <h5 class="card-title">{{$item->name}}</h5>
                     </div>
                     <a href="{{ route('item', [$item->id]) }}" class="stretched-link"></a>
