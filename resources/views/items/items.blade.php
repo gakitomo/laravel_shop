@@ -5,7 +5,7 @@
 @endsection
 
 @section('content')
-<div class="container">
+<!-- <div class="container">
     <div class="row">
         @foreach ($items as $item)
             <div class="col-3 mb-3">
@@ -36,7 +36,7 @@
         {{ $items->withQueryString()->links() }}
     </div>
 
-</div>
+</div> -->
 
 <a href="{{route('sell')}}"
    class="bg-secondary text-white d-inline-block d-flex justify-content-center align-items-center flex-column"
