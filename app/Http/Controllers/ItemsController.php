@@ -15,7 +15,7 @@ class ItemsController extends Controller
 {
     public function showItems(Request $request)
     {
-        $query = Item::query();
+        $query = Item::query()->get();
 
         if ($request->filled('category')) {
             list($categoryType, $categoryID) = explode(':', $request->input('category'));
