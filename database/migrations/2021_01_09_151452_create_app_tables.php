@@ -47,8 +47,8 @@ class CreateAppTables extends Migration
             $table->id();
             $table->unsignedBigInteger('seller_id');
             $table->unsignedBigInteger('buyer_id')->nullable();
-            $table->unsignedBigInteger('secondary_category_id');
-            $table->unsignedBigInteger('item_condition_id');
+            $table->unsignedBigInteger('secondary_category_id')->nullable();
+            $table->unsignedBigInteger('item_condition_id')->nullable();
 
             $table->string('name');
             $table->string('image_file_name');

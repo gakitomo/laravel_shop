@@ -33,7 +33,7 @@
     </div>
 
     <div class="d-flex justify-content-center">
-        <!-- {{ $items->withQueryString()->links() }} -->
+        {{ $items->withQueryString()->links() }}
     </div>
 
 </div>
