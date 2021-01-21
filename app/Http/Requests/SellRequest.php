@@ -27,8 +27,8 @@ class SellRequest extends FormRequest
             'item-image'  => ['required', 'file', 'image'],
             'name'        => ['required', 'string', 'max:255'],
             'description' => ['required', 'string', 'max:2000'],
-            'category'    => ['required', 'integer'],
-            'condition'   => ['required', 'integer'],
+            'category'    => ['integer'],
+            'condition'   => ['integer'],
             'price'       => ['required', 'integer', 'min:100', 'max:9999999'],
         ];
     }
