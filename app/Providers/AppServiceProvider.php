@@ -27,5 +27,8 @@ class AppServiceProvider extends ServiceProvider
     {
         Payjp::setApiKey(config('payjp.secret_key'));
         Schema::defaultStringLength(191);
+        if (\App::environment('production')) {
+            \URL::forceScheme('https');
+        }
     }
 }
