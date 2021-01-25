@@ -2,11 +2,12 @@
  
 laravel_melpit_shop
  
-Laravelを利用して、ショッピングサイトを作成。
+Laravelを利用して、ショッピングサイトを作成
+※商品画像の表示は現在調整中です
  
 # DEMO
  
-"hoge"の魅力が直感的に伝えわるデモ動画や図解を載せる
+
  
 # Features
  
@@ -14,9 +15,7 @@ Laravelを利用して、ショッピングサイトを作成。
 ・商品の購入
  
 # Requirement
- 
-"hoge"を動かすのに必要なライブラリなどを列挙する
- 
+
 php: "^7.2.5",
 fideloper/proxy: "^4.2",
 fruitcake/laravel-cors: "^2.0",
@@ -38,7 +37,7 @@ pip install huga_package
  
 # Usage
  
-DEMOの実行方法など、"hoge"の基本的な使い方を説明する
+DEMOの実行方法
  
 ```bash
 git clone https://github.com/hoge/~
@@ -61,5 +60,5 @@ python demo.py
 # License
 ライセンスを明示する
  
-"hoge" is under [MIT license](https://en.wikipedia.org/wiki/MIT_License).
+"laravel_shop" is under [MIT license](https://en.wikipedia.org/wiki/MIT_License).
  
