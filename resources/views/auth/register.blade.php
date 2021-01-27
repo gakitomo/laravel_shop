@@ -14,7 +14,7 @@
                 @csrf
 
                 <div class="form-group">
-                    <label for="name">ニックネーム</label>
+                    <label for="name">ニックネーム ※必須</label>
                     <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus placeholder="ララベル太郎">
                     @error('name')
                         <span class="invalid-feedback" role="alert">
@@ -24,7 +24,7 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="email">メールアドレス</label>
+                    <label for="email">メールアドレス ※必須</label>
                     <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" placeholder="laravel@example.com">
                     @error('email')
                         <span class="invalid-feedback" role="alert">
@@ -34,7 +34,7 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="password">パスワード</label>
+                    <label for="password">パスワード ※必須,8文字以上</label>
                     <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password" placeholder="password">
                     @error('password')
                         <span class="invalid-feedback" role="alert">
