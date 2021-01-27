@@ -1,50 +1,25 @@
-# Name（リポジトリ/プロジェクト/OSSなどの名前）
- 
-laravel_melpit_shop
- 
+# 作成したアプリ
 Laravelを利用して、ショッピングサイトを作成
-※商品画像の表示は現在調整中です
+※商品一覧ページの画像の表示については現在調整中です。
  
 # DEMO
- 
+
+https://gyazo.com/52de11491674c61da07658ad7f265c0b
+https://gyazo.com/46e0bf5f41659b17b83f63b81190131d
 
  
 # Features
  
-・商品の出品
-・商品の購入
+・商品の出品機能
+・商品の購入機能
  
-# Requirement
+# バージョンについて
 
-php: "^7.2.5",
-fideloper/proxy: "^4.2",
-fruitcake/laravel-cors: "^2.0",
-fzaninotto/faker: "^1.9",
-guzzlehttp/guzzle: "^6.3",
-intervention/image: "2.5.1",
 laravel/framework: "^7.24",
-laravel/tinker: "^2.0",
 laravel/ui: "2.1.0",
 payjp/payjp-php: "1.2.0"
  
-# Installation
- 
-Requirementで列挙したライブラリなどのインストール方法を説明する
- 
-```bash
-pip install huga_package
-```
- 
-# Usage
- 
-DEMOの実行方法
- 
-```bash
-git clone https://github.com/hoge/~
-cd examples
-python demo.py
-```
- 
+
 # Note
  
 注意点などがあれば書く
