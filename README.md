@@ -41,6 +41,11 @@ laravel/ui: "2.1.0",
 payjp/payjp-php: "1.2.0"
 <br>
 cssはbootstrap4を使用
+<br>
+
+<br>
+# バージョンについて
+Docker+Laradock+MYSQL
 
 # このアプリを作成した理由
 PHPを使用したアプリ開発に興味を持ったから
