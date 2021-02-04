@@ -9,6 +9,8 @@
     "license": "MIT",
     "require": {
         "php": "^7.2.5",
+        "ext-gd": "*",
+        "aws/aws-sdk-php": "^3.173",
         "fideloper/proxy": "^4.2",
         "fruitcake/laravel-cors": "^2.0",
         "fzaninotto/faker": "^1.9",
@@ -17,7 +19,6 @@
         "laravel/framework": "^7.24",
         "laravel/tinker": "^2.0",
         "laravel/ui": "2.1.0",
-        "ext-gd": "*",
         "payjp/payjp-php": "1.2.0"
     },
     "require-dev": {
